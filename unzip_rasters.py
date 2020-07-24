@@ -1,5 +1,5 @@
 """
-Unzip zipped raster files (tif and asc)
+Unzip zipped raster files 
 Name : Unzip_rasters
 Group : File handling
 With QGIS : 31401
