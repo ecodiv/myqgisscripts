@@ -17,8 +17,18 @@ import zipfile
 class Unzip(QgsProcessingAlgorithm):
 
     def initAlgorithm(self, config=None):
-        self.addParameter(QgsProcessingParameterFile('InputFile', 'InputFile', behavior=QgsProcessingParameterFile.File, fileFilter='All files (*.*)', defaultValue=None))
-        self.addParameter(QgsProcessingParameterFile('outputFile', 'OutputFolder', behavior=QgsProcessingParameterFile.Folder, fileFilter='All files (*.*)', defaultValue=None))
+        self.addParameter(QgsProcessingParameterFile(
+            'InputFile', 
+            'InputFile', 
+            behavior=QgsProcessingParameterFile.File, 
+            fileFilter='All files (*.*)', 
+            defaultValue=None))
+        self.addParameter(QgsProcessingParameterFile(
+            'outputFile',
+            'OutputFolder',
+            behavior=QgsProcessingParameterFile.Folder,
+            fileFilter='All files (*.*)',
+            defaultValue=None))
 
     def processAlgorithm(self, parameters, context, model_feedback):
         temp_dir = parameters['outputFile']
