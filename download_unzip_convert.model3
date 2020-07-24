@@ -97,7 +97,7 @@
   </Option>
   <Option name="modelVariables"/>
   <Option type="QString" name="model_group" value="My script"/>
-  <Option type="QString" name="model_name" value="Unzip and convert"/>
+  <Option type="QString" name="model_name" value="Download, unzip and convert"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="DownloadURL">
       <Option type="QString" name="default" value="http://geodata.rivm.nl/downloads/ank/ANK_084_20170314_gm_Bomenkaart_percentage.zip"/>
