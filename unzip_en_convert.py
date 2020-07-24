@@ -18,7 +18,7 @@ import tempfile
 import pathlib
 import ntpath
 
-class Unzip(QgsProcessingAlgorithm):
+class Unzip_convert(QgsProcessingAlgorithm):
 
     def initAlgorithm(self, config=None):
         self.addParameter(QgsProcessingParameterFile(
